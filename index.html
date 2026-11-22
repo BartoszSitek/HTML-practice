@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mój tydzień · Move</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="Move">
+        <nav>
+            <a class="logo" href="#">Move</a>
+            <a href="#tydzien">Tydzień</a>
+            <a href="#treningi">Treningi</a>
+        </nav>
+    </header>
+    <main>
+        <section id="tydzien" class="hero">
+            <h1>Cześć, Bartek!</h1>
+            <p id="msg">Do celu brakuje: 3</p>
+            <div class="circles">
+                <div class="circle">+</div>
+                <div class="circle">+</div>
+                <div class="circle">+</div>
+            </div>
+        </section>
+        <section id="treningi" class="card">
+            <h2>
+                Dodaj trening
+            </h2>
+            <form id="form">
+                <label>
+                    Rodzaj treningu
+                        <select name="type">
+                        <option>Bieg</option>
+                        <option>Rower</option>
+                        <option>Siłownia</option>
+                        </select>
+                </label>
+                <label>
+                    Minuty
+                        <input name="minutes" type="number" min="5" value="30" required>
+                </label>
+                <button type="submit">Zapisz</button>
+            </form>
+            <ul id="list"></ul></section> 
+    </main>
+    <footer>Move · projekt inżynierski 2026</footer>
+</body>
+</html>
